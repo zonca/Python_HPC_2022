@@ -8,5 +8,5 @@ NOTEBOOK_FOLDER=$(pwd -P)
 # Use the user home
 # NOTEBOOK_FOLDER=${HOME}
 #RESERVATION=SI2021RES
-galyleo.sh launch --account $ACCOUNT --partition 'debug' --cpus-per-task 128 --time-limit 00:30:00 --jupyter 'lab' --notebook-dir "${NOTEBOOK_FOLDER}" --env-modules 'singularitypro' --bind '/expanse,/scratch' --sif "${SIMG}"
+galyleo.sh launch --account $ACCOUNT --partition 'debug' --memory '200' --cpus-per-task 128 --time-limit 00:30:00 --jupyter 'lab' --notebook-dir "${NOTEBOOK_FOLDER}" --env-modules 'singularitypro' --bind '/expanse,/scratch' --sif "${SIMG}"
 #galyleo.sh launch --account $ACCOUNT --reservation ${RESERVATION} --partition 'compute' --cpus-per-task 128 --time-limit 02:45:00 --jupyter 'lab' --notebook-dir "${NOTEBOOK_FOLDER}" --env-modules 'singularitypro' --bind '/expanse,/scratch' --sif "${SIMG}"
